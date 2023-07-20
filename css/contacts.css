@@ -1,0 +1,160 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+.header{
+    display: grid;
+    grid-template-columns: 5fr 1fr 1.3fr 1.3fr;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    padding-top: 20px;
+}
+.header a{
+    text-decoration: none;
+}
+.web-name{
+    padding-left: 45px;
+    font-size: 25px;
+    background-image: linear-gradient(#176B87,#64CCC5,#DAFFFB);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    background-image: linear-gradient(#176B87,#64CCC5,#DAFFFB);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    color: transparent;
+    padding: 5px;
+    transition: letter-spacing 1s ease-in-out;
+}
+.buttons:hover{
+    cursor: pointer;
+    letter-spacing: 6px;
+}
+.main-container{
+    display: flex;
+    align-items: center;
+    padding-top: 140px;
+    padding-left: 100px;
+    color: white;
+    gap: 20rem;
+}
+.icon-list{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.text{
+    animation: in 5s forwards;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+.text:hover{
+    cursor: pointer;
+}
+@keyframes lightup {
+    0%{
+    filter: drop-shadow(0 0 0px #176B87)
+            drop-shadow(0 0 0px #176B87)
+            drop-shadow(0 0 16px #176B87);
+    }
+    50%{
+    filter: drop-shadow(0 0 0px #176B87)
+            drop-shadow(0 0 8px #176B87)
+            drop-shadow(0 0 16px #176B87);
+    }
+    100%{
+    filter: drop-shadow(0 0 8px #176B87)
+            drop-shadow(0 0 16px #176B87)
+            drop-shadow(0 0 20px #176B87);
+    }
+}
+@keyframes in {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 250px;
+}
+.icons a{
+    text-decoration: none;
+    color: white;
+}
+.icons a:hover{
+     animation: lightup 3s forwards;
+}
+.logo{
+    scale: 1.1;
+    animation: in 2s forwards;
+}
+.github{
+    height: 70px;
+}
+.phone{
+    mix-blend-mode:hard-light;
+}
+.neon{
+    animation: in 3s forwards;
+}
+.neon-text{
+    font-size: 100px;
+    padding-left: 200px;
+    font-weight: 500;
+    filter: drop-shadow(0 0 0px #176B87)
+            drop-shadow(0 0 0px #176B87)
+            drop-shadow(0 0 0px #176B87);
+    animation: flickering 5s infinite;
+    
+}
+@keyframes flickering {
+    0%{
+    filter: drop-shadow(0 0 0px #176B87)
+            drop-shadow(0 0 8px #176B87)
+            drop-shadow(0 0 16px #176B87);
+    }
+    25%{
+    filter: drop-shadow(0 0 0px #176B87)
+            drop-shadow(0 0 4px #176B87)
+            drop-shadow(0 0 16px #176B87);
+    }
+    50%{
+    filter: drop-shadow(0 0 0px #176B87)
+            drop-shadow(0 0 0px #176B87)
+            drop-shadow(0 0 0px #176B87);
+    }
+    75%{
+    filter: drop-shadow(0 0 8px #176B87)
+            drop-shadow(0 0 16px #176B87)
+            drop-shadow(0 0 24px #176B87);
+    }
+    100%{
+    filter: drop-shadow(0 0 0px #176B87)
+            drop-shadow(0 0 8px #176B87)
+            drop-shadow(0 0 16px #176B87);
+    }
+}
