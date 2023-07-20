@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <head>
+        <title>Portfolio</title>
+
+        <link rel="stylesheet" href="css/portfolio.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@400;500;600;800;900&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <header class="header">
+            <span class="web-name">
+                AXL WEB
+            </span>
+            <a href="Home.html">
+                <span class="buttons">
+                    HOME
+                </span>
+            </a>
+            <a href="portfolio.html">
+                <span class="buttons">
+                    PORTFOLIO
+                </span>
+            </a>
+            <a href="contacts.html">
+                <span class="buttons">
+                    CONTACTS
+                </span>
+            </a>
+        </header>
+
+
+        <main class="container">
+            <div class="image-slider-container">
+         <div class="slider">
+            <div class="images">
+                <input onclick="checkPhoto()" class="js-radio1" type="radio" name="slide" id="img1" checked>
+                <input onclick="checkPhoto()" class="js-radio2" type="radio" name="slide" id="img2">
+                <input onclick="checkPhoto()" class="js-radio3" type="radio" name="slide" id="img3">
+                <input onclick="checkPhoto()" class="js-radio4" type="radio" name="slide" id="img4">
+
+                <img src="photos/wilpipir.jpeg" class="m1" alt="img1">
+                <img src="photos/wilpipir.jpeg" class="m2" alt="img2">
+                <img src="photos/wilpipir.jpeg" class="m3" alt="img3">
+                <img src="photos/wilpipir.jpeg" class="m4" alt="img4">
+            </div>
+            <div class="dots">
+                <label for="img1"></label>
+                <label for="img2"></label>
+                <label for="img3"></label>
+                <label for="img4"></label>
+            </div>
+        </div>
+
+        <script src="js/portfolio.js">
+
+        </script>
+            </div>
+
+            <div class="image-details js-image-details">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti fugit ipsam laborum. Ullam porro asperiores aspernatur, veritatis atque placeat ab accusamus. Impedit consequuntur atque nesciunt nihil inventore porro, repellendus velit.
+            </div>
+        </main>
+    </body>
+</html>
